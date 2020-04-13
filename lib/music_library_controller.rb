@@ -5,6 +5,7 @@ class MusicLibraryController
   end
 
   def call
+    input = ""
     while input != nil
       puts "Welcome to your music library!"
       puts "To list all of your songs, enter 'list songs'."
@@ -17,4 +18,5 @@ class MusicLibraryController
       puts "What would you like to do?"
     end
   end
+
 end
