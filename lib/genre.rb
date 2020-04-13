@@ -5,6 +5,7 @@ class Genre
 
   def initialize(name)
     @name = name
+    save
   end
 
   def self.all
@@ -15,4 +16,5 @@ class Genre
   def save
     @@all << self
   end
+
 end
