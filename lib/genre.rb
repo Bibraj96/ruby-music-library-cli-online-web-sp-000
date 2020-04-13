@@ -23,7 +23,8 @@ class Genre
 
   def self.create(name)
     artist = self.new(name)
-    self.save
+    artist.save
+    artist
   end
 
 end
