@@ -56,7 +56,7 @@ class Song
     self.find_by_name(name) || self.create(name)
   end
 
-  def self.new_from_filename
+  def self.new_from_filename(filename)
     array = filename.split(" - ")
 
     song_name = array[1]
@@ -69,6 +69,7 @@ class Song
   end
 
   def self.create_from_filename
+    self.new_from_filename << save
   end
 
   end
