@@ -20,4 +20,9 @@ class Song
     self.all.clear
   end
 
+  def self.create(name)
+    artist = self.new(name)
+    self.save
+  end
+
 end
