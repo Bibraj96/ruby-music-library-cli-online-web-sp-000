@@ -1,2 +1,2 @@
-class musicimporter
+class MusicImporter
 end
