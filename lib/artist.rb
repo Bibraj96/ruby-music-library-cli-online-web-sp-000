@@ -29,6 +29,6 @@ class Artist
 
   def songs
     Song.all.map {|song| song.artist = self}
-    dn
+  end
 
 end
