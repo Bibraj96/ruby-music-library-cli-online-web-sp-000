@@ -32,8 +32,8 @@ class Artist
   end
 
   def add_song(song)
-    if song.artist == self
-      @songs << song
+    if song.artist == false
+      song.artist == self
     end
   end
 
