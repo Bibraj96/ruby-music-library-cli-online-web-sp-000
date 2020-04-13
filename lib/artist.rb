@@ -36,4 +36,10 @@ class Artist
     songs << song unless songs.include?(song)
   end
 
+  def genres
+    songs.map do |song|
+      song.genre
+    end
+  end
+
 end
